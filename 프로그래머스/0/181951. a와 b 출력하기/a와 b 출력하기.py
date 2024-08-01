@@ -1,6 +1,6 @@
-a, b = map(int, input().strip().split(' '))
+a, b = map(int, input().strip().split())
 if a >= -100000 and a <= 100000:
-    print("a", "=", str(a))
+    print("a =", a)
 
 if b >= -100000 and b <= 100000:
-    print("b", "=", str(b))
+    print("b =", b)
