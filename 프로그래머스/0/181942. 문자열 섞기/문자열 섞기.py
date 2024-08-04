@@ -4,7 +4,7 @@ def solution(str1, str2):
         if str1.islower() and str2.islower():
             answer = ''
             for i in range(0, len(str2)):
-                answer = answer+str1[i]+str2[i]
+                answer += str1[i]+str2[i]
         else:
             return -1
     else:
