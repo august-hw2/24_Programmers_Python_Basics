@@ -4,11 +4,9 @@ def solution(a, b):
         c = str(a)+str(b)
         d = str(b)+str(a)
 
-        if int(c) < int(d):
-            return int(d)
-        elif int(c) > int(d):
+        if int(c) == int(d):
             return int(c)
-        elif int(c) == int(d):
-            return int(c)
+        else:
+            return (max (int(c), int(d)))
     else:
         return -1
