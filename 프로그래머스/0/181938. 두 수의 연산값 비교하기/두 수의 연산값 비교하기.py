@@ -5,7 +5,4 @@ def solution(a, b):
         c = str(a)+str(b)
         d = int(c)
         
-        if d == 2*a*b:
-            return d
-        else:
-            return max(d, 2*a*b)
+        return d if d == 2*a*b else max(d, 2*a*b)
