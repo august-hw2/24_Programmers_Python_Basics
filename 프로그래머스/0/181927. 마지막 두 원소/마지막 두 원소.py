@@ -1,5 +1,7 @@
 def solution(num_list):
     cnt = len(num_list)
+    last = num_list[cnt-1]
+    notlast = num_list[cnt-2]
     
     if 2<=cnt<=10:
         
@@ -10,12 +12,8 @@ def solution(num_list):
             else:
                 return -1
             
-        if num_list[cnt-1] > num_list[cnt-2]:
-            num_list.append(num_list[cnt-1]-num_list[cnt-2])
-            return num_list
-        else:
-            num_list.append(num_list[cnt-1]*2)
-            return num_list
+        num_list.append(last-notlast) if last > notlast else num_list.append(last*2)
+        return num_list
         
     else:
         return -1
