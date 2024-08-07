@@ -6,8 +6,10 @@ def solution(l, r):
         
         for i in range(l, r+1):
             
-            if set(str(i)) <= {'0', '5'}:
+            if not set(str(i)) - set(['0', '5']):
+                #(모든 정수 - 0과 5가 포함된 정수) = 0과 5가 포함되지 않은 정수만 추출되나, not을 붙여 0과 5만 포함된 정수일 때만 배열에 요소 추가
                 res.append(i)
+                
         if len(res) == 0:
             res.append(-1)
         
