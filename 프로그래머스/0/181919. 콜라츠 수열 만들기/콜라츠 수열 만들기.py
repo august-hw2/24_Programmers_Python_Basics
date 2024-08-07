@@ -6,7 +6,7 @@ def solution(n):
         
         while n!=1: #1이 아닐 때만
             if n%2==0:
-                n //= 2
+                n //= 2 #몫 연산자
                 res.append(n)
             else:
                 n *= 3
