@@ -3,11 +3,9 @@ def solution(my_strings, parts):
         
         res = ""
         
-        for i in range(len(parts)):
-            
-            temp = my_strings[i] #문자열 배열 임시 저장
+        for i, (s, e) in zip(my_strings, parts):
 
-            res += temp[parts[i][0]:parts[i][1]+1]
+            res += i[s:e+1]
 
         return res
             
