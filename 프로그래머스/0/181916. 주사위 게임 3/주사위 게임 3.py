@@ -16,14 +16,10 @@ def solution(a, b, c, d):
         elif len(temp_arr) == 2: #4개 중 2개씩 중복 혹은 3개 중복 -> 중복된 값 2개 저장
             if len(set(temp_arr)) == 1: #temp에서도 중복이 발생한 경우
                 for i in res_arr:
-                    if i == temp_arr[0]:
+                    if i == temp_arr[0]: #temp와 동일한 값인 경우, 3번 중복인 값 찾기
                         p = i
                         res_arr.remove(i)
                 return (10*p+res_arr[0])**2
-                #pass
-                #p = temp_arr[0]
-                #q = set(temp_arr)&set(res_arr)
-                #return (10*p+q[0])**2
             elif len(set(temp_arr)) == 2: #temp에서 중복이 발생하지 않은 경우
                 return (res_arr[0]+res_arr[1])*abs(res_arr[0]-res_arr[1])                
         elif len(temp_arr) == 1: #4개 중 2개만 중복 -> 중복된 값 1개만 저장       
