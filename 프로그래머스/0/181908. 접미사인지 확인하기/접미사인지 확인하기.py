@@ -6,10 +6,7 @@ def solution(my_string, is_suffix):
         for i in range(len(my_string)):
             temp.append(my_string[i:])
     
-        if is_suffix in temp:
-            return 1
-        else:
-            return 0
+        return 1 if is_suffix in temp else 0
     
     else:
         return -1
