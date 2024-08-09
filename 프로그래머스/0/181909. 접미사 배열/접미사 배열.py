@@ -5,7 +5,10 @@ def solution(my_string):
         
         for i in range(len(my_string)):
             res.append(my_string[i:])
-        return sorted(res)
+        
+        res.sort()
+        
+        return res
         
     else:
         return -1
