@@ -1,9 +1,7 @@
 def solution(n, slicer, num_list):
     if len(slicer) == 3 and 5<=len(num_list)<=30:
         
-        a = slicer[0]
-        b = slicer[1]
-        c = slicer[2]
+        a, b, c = slicer #리스트 요소 순서대로 변수에 저장
         
         if n == 1:
             return num_list[0:b+1]
